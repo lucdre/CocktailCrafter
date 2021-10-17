@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CocktailCrafter</string>
+    <string name="cocktailListTitle">What would you like to drink?</string>
 </resources>
