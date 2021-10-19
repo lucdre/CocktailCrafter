@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CocktailCrafter</string>
     <string name="cocktailListTitle">What would you like to drink?</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="cocktail_name_placeholder">cocktail_name_placeholder</string>
+    <string name="base_spirit_placeholder">base_spirit_placeholder</string>
 </resources>
