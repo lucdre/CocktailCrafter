@@ -1,7 +1,61 @@
 <resources>
     <string name="app_name">CocktailCrafter</string>
-    <string name="cocktailListTitle">What would you like to drink?</string>
     <string name="cocktail">Cocktail</string>
     <string name="cocktail_name_placeholder">cocktail_name_placeholder</string>
     <string name="base_spirit_placeholder">base_spirit_placeholder</string>
+    <string name="ingredientsTitle">Ingredients:</string>
+    <string name="stepsTitle">Steps:</string>
+
+    <!-- Base Spirits -->
+    <string name="BSRum">Rum</string>
+    <string name="BSWRum">White Rum</string>
+    <string name="BSBourbon">Bourbon</string>
+    <string name="BSRye">Rye Whisky</string>
+    <string name="BSWhisky">Whisky</string>
+    <string name="BSTequila">Tequila</string>
+    <string name="BSGin">Gin</string>
+    <string name="BSVodka">Vodka</string>
+
+    <!-- Extra Ingredients -->
+    <string name="Cointreau">Cointreau</string>
+
+    <!-- Gold Rush -->
+    <string name="GRIngredients">Bourbon\nLime juice\nHoney syrup (3:1 ratio)</string>
+    <string name="GRSteps">1. Add 1.5 oz bourbon\n2. Add ¾ oz lime juice\n3. Add ¾ oz honey syrup\n4. Add ice, shake and strain on ice</string>
+
+    <!-- X.Y.Z. -->
+    <string name="XYZIngredients">Rum\nCointreau\nFresh lemon juice</string>
+    <string name="XYZSteps">1. Add 1.5 oz rum, 1 oz Cointreau and ¾ oz lemon juice in a cocktail mixer\n2. Add ice and shake\n3. Strain the ice and serve in a cold glass</string>
+
+    <!-- Miami Cocktail -->
+    <string name="MCIngredients">White rum\nCointreau\nFresh lemon juice</string>
+    <string name="MCSteps">1. Add 1.5 oz white rum, 1 oz Cointreau and ¾ oz lemon juice in a cocktail mixer\n2. Add ice and shake\n3. Strain the ice and serve in a cold glass</string>
+
+    <!-- Daiquiri -->
+    <string name="DaiquiriIngredients">White rum\nSugar\nLime juice</string>
+    <string name="DaiquiriSteps">0. Make sure to have a chilled glass\n1. Add 1 oz lime juice\n2. Add 1 spoon of sugar and stir to disolve\n3. Add 2 oz white rum\n4. Add ice, then shake and serve</string>
+
+    <!-- Mojito -->
+    <string name="MojitoIngredients">White rum\nRich dem juice\nLime juice\nBrown sugar\nMint\nSoda water</string>
+    <string name="MojitoSteps">1. Put about 10 mint leaves in the glass\n2. Add &#189; spoon of brown sugar and stir (don\'t crush the leaves)\n3. Add 2 oz white rum\n4. Add 1 oz lime juice\n5. Add &#189; of syrup\n6. Add ice, then shake\n7. Pour into the glass, add crushed ice (&#190; of glass)\n8. Top up with soda water, and mint leaves on top</string>
+
+    <!-- El Tarin -->
+    <string name="TarinIngredients">Bourbon/Jim Bean\nRich dem syrup\nBitter\nLime juice</string>
+    <string name="TarinSteps">1. Add 2 oz bourbon\n2. Add 1 oz lime juice\n3. Add &#189; oz rich dem syrup\n4. Add a splat or two of bitter\n5. Add ice, shake, strain and serve</string>
+
+    <!-- Manhattan -->
+    <string name="ManhattanIngredients">Bourbon/Jim Bean or ry whiskey\nSweet vermouth (red)\nBitter</string>
+    <string name="ManhattanSteps">1. Pour 2 oz bourbon\n2. Add 1 oz vermouth\n3. Add 2 dashes bitter\n4. Add ice, then stir for a good while\n5. Strain the ice and serve</string>
+
+    <!-- Old Fashioned -->
+    <string name="OldieIngredients">Bourbon\nRich dem syrup\nBitter\nOrange</string>
+    <string name="OldieSteps">1. Add a piece of orange\n2. Add ¼ oz rich dem syrup\n3. Add 2–4 dashes (personal pref.) of bitter\n4. Add 2 oz bourbon\n5. Add ice and stir\n6. Add ice cubes to your glass, strain the ice and orange and pour</string>
+
+    <!-- Cointreau Rickey -->
+    <string name="CRickeyIngredients">Cointreau\nLime juice\nSoda water</string>
+    <string name="CRickeySteps">1. Add 1.5 oz Cointreau\n2. Add ¾ oz lime juice\n3. Add 3.5 oz soda, stir and serve\nOptional garnish: Lime/orange shell</string>
+
+    <!-- Cointreau Cocktail -->
+    <string name="CCocktailIngredients">Cointreau\nRed vermouth\nBitter</string>
+    <string name="CCocktailSteps">1. Add 1.5 oz Cointreau\n2. Add 1.5 oz red vermouth\n3. Add 3–4 dashes of bitter\n4. Add ice and stir a while\n5. Serve in a martini glass\nOptional garnish: lime shell</string>
 </resources>

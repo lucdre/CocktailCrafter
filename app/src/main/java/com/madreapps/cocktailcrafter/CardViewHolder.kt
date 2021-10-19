@@ -15,7 +15,7 @@ class CardViewHolder(
 
     fun bindCocktail(cocktail: Cocktail) {
         cardCellBinding.cocktailImage.setImageResource(cocktail.image)
-        cardCellBinding.cocktail.text = cocktail.name
+        cardCellBinding.cocktailName.text = cocktail.name
         cardCellBinding.baseSpirit.text = cocktail.baseSpirit
 
         cardCellBinding.cardView.setOnClickListener{

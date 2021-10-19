@@ -21,9 +21,10 @@ class DetailActivity : AppCompatActivity() {
         val cocktail = cocktailFromID(cocktailID)
         if (cocktail != null) {
             binding.cocktailImage.setImageResource(cocktail.image)
-            binding.cocktail.text = cocktail.name
+            binding.cocktailName.text = cocktail.name
             binding.baseSpirit.text = cocktail.baseSpirit
-            binding.description.text = cocktail.description
+            binding.ingredients.text = cocktail.ingredients
+            binding.steps.text = cocktail.steps
         }
     }
 

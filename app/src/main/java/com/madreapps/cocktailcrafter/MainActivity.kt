@@ -35,29 +35,96 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
     }
 
     private fun populateCocktails(){
-        val cocktail1 = Cocktail(
+        val goldRush = Cocktail(
             R.drawable.goldrush,
             "Gold Rush",
-            "Rum",
-            "Nice gold rushlike hehetest"
+            getString(R.string.BSBourbon),
+            getString(R.string.GRIngredients),
+            getString(R.string.GRSteps)
         )
-        cocktailList.add(cocktail1)
+        cocktailList.add(goldRush)
 
-        val cocktail2 = Cocktail(
+        val xyz = Cocktail(
             R.drawable.xyz,
             "X.Y.Z.",
-            "Rum",
-            "Nice rummmmm"
+            getString(R.string.BSRum),
+            getString(R.string.XYZIngredients),
+            getString(R.string.XYZSteps)
         )
-        cocktailList.add(cocktail2)
+        cocktailList.add(xyz)
 
-        val cocktail3 = Cocktail(
+        val miamiCocktail = Cocktail(
             R.drawable.miamicocktail,
             "Miami Cocktail",
-            "White Rum",
-            "Nice white ruuummmmm"
+            getString(R.string.BSWRum),
+            getString(R.string.MCIngredients),
+            getString(R.string.MCSteps)
         )
-        cocktailList.add(cocktail3)
+        cocktailList.add(miamiCocktail)
+
+        val daiquiri = Cocktail(
+            R.drawable.placeholder,
+            "Daiquiri",
+            getString(R.string.BSWRum),
+            getString(R.string.DaiquiriIngredients),
+            getString(R.string.DaiquiriSteps)
+        )
+        cocktailList.add(daiquiri)
+
+        val mojito = Cocktail(
+            R.drawable.placeholder,
+            "Mojito",
+            getString(R.string.BSWRum),
+            getString(R.string.MojitoIngredients),
+            getString(R.string.MojitoSteps)
+        )
+        cocktailList.add(mojito)
+
+        val tarin = Cocktail(
+            R.drawable.placeholder,
+            "El Tarin",
+            getString(R.string.BSBourbon),
+            getString(R.string.TarinIngredients),
+            getString(R.string.TarinSteps)
+        )
+        cocktailList.add(tarin)
+
+        val manhattan = Cocktail(
+            R.drawable.placeholder,
+            "Manhattan",
+            getString(R.string.BSBourbon),
+            getString(R.string.ManhattanIngredients),
+            getString(R.string.ManhattanSteps)
+        )
+        cocktailList.add(manhattan)
+
+        val oldFashioned = Cocktail(
+            R.drawable.placeholder,
+            "Old Fashioned",
+            getString(R.string.BSBourbon),
+            getString(R.string.OldieIngredients),
+            getString(R.string.OldieSteps)
+        )
+        cocktailList.add(oldFashioned)
+
+        val cRickey = Cocktail(
+            R.drawable.placeholder,
+            "Cointreau Rickey",
+            getString(R.string.Cointreau),
+            getString(R.string.CRickeyIngredients),
+            getString(R.string.CRickeySteps)
+        )
+        cocktailList.add(cRickey)
+
+        val cCocktail = Cocktail(
+            R.drawable.placeholder,
+            "Cointreau Cocktail",
+            getString(R.string.Cointreau),
+            getString(R.string.CCocktailIngredients),
+            getString(R.string.CCocktailSteps)
+        )
+        cocktailList.add(cCocktail)
+
 
     }
 }
