@@ -4,13 +4,14 @@ package com.madreapps.cocktailcrafter
  * Author: Luca Thiel
  * 15.10.21
  */
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.madreapps.cocktailcrafter.databinding.ActivityMainBinding
 
 // We define the standard cocktails
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), CocktailClickListener {
     private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +24,14 @@ class MainActivity : AppCompatActivity() {
         val mainActivity = this
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(applicationContext, 3)
-            adapter = CardAdapter(cocktailList)
+            adapter = CardAdapter(cocktailList, mainActivity)
         }
+    }
+
+    override fun onClick(cocktail: Cocktail) {
+        val intent = Intent(applicationContext, DetailActivity::class.java)
+        intent.putExtra(COCKTAIL_ID_EXTRA, cocktail.id)
+        startActivity(intent)
     }
 
     private fun populateCocktails(){

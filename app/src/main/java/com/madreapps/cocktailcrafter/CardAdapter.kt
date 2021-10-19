@@ -10,13 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.madreapps.cocktailcrafter.databinding.CardCellBinding
 
 // The adapter
-class CardAdapter(private val cocktails: List<Cocktail>)
+class CardAdapter(private val cocktails: List<Cocktail>,
+                  private val clickListener: CocktailClickListener)
     : RecyclerView.Adapter<CardViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
         val from = LayoutInflater.from(parent.context)
         val binding = CardCellBinding.inflate(from, parent, false)
-        return CardViewHolder(binding)
+        return CardViewHolder(binding, clickListener)
     }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
