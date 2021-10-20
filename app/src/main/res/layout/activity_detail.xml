@@ -18,6 +18,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/cocktail"/>
 
+    <!-- android:textColor="@color/black" -->
     <TextView
         android:id="@+id/cocktailName"
         android:layout_marginTop="10dp"
@@ -25,11 +26,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/cocktail_name_placeholder"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:lines="2"
         android:textStyle="bold"/>
 
+    <!-- android:textColor="@color/purple_200" -->
     <TextView
         android:id="@+id/baseSpirit"
         android:layout_marginTop="10dp"
@@ -37,10 +38,10 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/base_spirit_placeholder"
-        android:textColor="@color/purple_200"
         android:textSize="18sp"
         android:lines="1" />
 
+    <!-- android:textColor="@color/black" -->
     <TextView
         android:id="@+id/ingredientsTitle"
         android:layout_marginTop="10dp"
@@ -49,10 +50,10 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/ingredientsTitle"
-        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"/>
 
+    <!-- android:textColor="@color/black" -->
     <TextView
         android:id="@+id/ingredients"
         android:layout_marginLeft="20dp"
@@ -61,9 +62,9 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/base_spirit_placeholder"
-        android:textColor="@color/black"
         android:textSize="14sp" />
 
+    <!-- android:textColor="@color/black" -->
     <TextView
         android:id="@+id/stepsTitle"
         android:layout_marginTop="10dp"
@@ -72,10 +73,10 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/stepsTitle"
-        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"/>
 
+    <!-- android:textColor="@color/black" -->
     <TextView
         android:id="@+id/steps"
         android:layout_marginLeft="20dp"
@@ -84,7 +85,6 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/base_spirit_placeholder"
-        android:textColor="@color/black"
         android:textSize="14sp" />
 
 </LinearLayout>

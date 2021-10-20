@@ -1,6 +1,5 @@
-- Fix cocktail images
-- Add dark mode support
-- https://github.com/lucdre/CocktailCrafter/issues/2
+- Fix cocktail images (alignment and add new)
+- Adjust colors (light and dark mode)
 - Filter by base spirit
 - Filter by ingredients
 - Select which ingredients you have and see what you can make
