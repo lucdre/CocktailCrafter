@@ -1,5 +1,6 @@
 - Fix cocktail images
-- Add more cocktails
+- Add dark mode support
+- https://github.com/lucdre/CocktailCrafter/issues/2
 - Filter by base spirit
 - Filter by ingredients
 - Select which ingredients you have and see what you can make
@@ -14,3 +15,4 @@
 - In cards, add similar drinks/variations that you might also like
 - Ability to rate your drink
 - Add description of the drink
+- Get recipes from online pages?

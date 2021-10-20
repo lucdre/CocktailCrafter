@@ -26,6 +26,16 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
             layoutManager = GridLayoutManager(applicationContext, 3)
             adapter = CardAdapter(cocktailList, mainActivity)
         }
+
+    }
+
+    /**
+     * Temporary solution, (I hope) to issue#2  https://github.com/lucdre/CocktailCrafter/issues/2
+     */
+    //TODO test this, also probably not the best idea to clear and re-populate everytime
+    override fun onBackPressed() {
+        super.onBackPressed()
+        cocktailList.clear()
     }
 
     override fun onClick(cocktail: Cocktail) {
