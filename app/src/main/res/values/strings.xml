@@ -33,7 +33,7 @@
 
     <!-- Daiquiri -->
     <string name="DaiquiriIngredients">White rum\nSugar\nLime juice</string>
-    <string name="DaiquiriSteps">0. Make sure to have a chilled glass\n1. Add 1 oz lime juice\n2. Add 1 spoon of sugar and stir to disolve\n3. Add 2 oz white rum\n4. Add ice, then shake and serve</string>
+    <string name="DaiquiriSteps">0. Make sure to have a chilled glass\n1. Add 1 oz lime juice\n2. Add 1 spoon of sugar and stir to disolve\n3. Add 2 oz white rum\n4. Add ice, then shake and serve\n\nOptional garnish: Slice of lime</string>
 
     <!-- Mojito -->
     <string name="MojitoIngredients">White rum\nRich dem juice\nLime juice\nBrown sugar\nMint\nSoda water</string>
@@ -53,9 +53,9 @@
 
     <!-- Cointreau Rickey -->
     <string name="CRickeyIngredients">Cointreau\nLime juice\nSoda water</string>
-    <string name="CRickeySteps">1. Add 1.5 oz Cointreau\n2. Add ¾ oz lime juice\n3. Add 3.5 oz soda, stir and serve\nOptional garnish: Lime/orange shell</string>
+    <string name="CRickeySteps">1. Add 1.5 oz Cointreau\n2. Add ¾ oz lime juice\n3. Add 3.5 oz soda, stir and serve\n\nOptional garnish: Lime/orange shell</string>
 
     <!-- Cointreau Cocktail -->
     <string name="CCocktailIngredients">Cointreau\nRed vermouth\nBitter</string>
-    <string name="CCocktailSteps">1. Add 1.5 oz Cointreau\n2. Add 1.5 oz red vermouth\n3. Add 3–4 dashes of bitter\n4. Add ice and stir a while\n5. Serve in a martini glass\nOptional garnish: lime shell</string>
+    <string name="CCocktailSteps">1. Add 1.5 oz Cointreau\n2. Add 1.5 oz red vermouth\n3. Add 3–4 dashes of bitter\n4. Add ice and stir a while\n5. Serve in a martini glass\n\nOptional garnish: Lime shell</string>
 </resources>

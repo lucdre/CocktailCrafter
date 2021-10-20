@@ -8,6 +8,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.madreapps.cocktailcrafter.databinding.ActivityMainBinding
 
 // We define the standard cocktails
@@ -22,8 +23,9 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         populateCocktails()
 
         val mainActivity = this
+
         binding.recyclerView.apply {
-            layoutManager = GridLayoutManager(applicationContext, 3)
+            layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
             adapter = CardAdapter(cocktailList, mainActivity)
         }
 
@@ -73,7 +75,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(miamiCocktail)
 
         val daiquiri = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.daiquiri,
             "Daiquiri",
             getString(R.string.BSWRum),
             getString(R.string.DaiquiriIngredients),
@@ -82,7 +84,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(daiquiri)
 
         val mojito = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.mojito,
             "Mojito",
             getString(R.string.BSWRum),
             getString(R.string.MojitoIngredients),
@@ -100,7 +102,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(tarin)
 
         val manhattan = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.manhattan,
             "Manhattan",
             getString(R.string.BSBourbon),
             getString(R.string.ManhattanIngredients),
@@ -109,7 +111,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(manhattan)
 
         val oldFashioned = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.oldie,
             "Old Fashioned",
             getString(R.string.BSBourbon),
             getString(R.string.OldieIngredients),
@@ -118,7 +120,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(oldFashioned)
 
         val cRickey = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.crickey,
             "Cointreau Rickey",
             getString(R.string.Cointreau),
             getString(R.string.CRickeyIngredients),
@@ -127,7 +129,7 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         cocktailList.add(cRickey)
 
         val cCocktail = Cocktail(
-            R.drawable.placeholder,
+            R.drawable.ccocktail,
             "Cointreau Cocktail",
             getString(R.string.Cointreau),
             getString(R.string.CCocktailIngredients),
