@@ -137,6 +137,15 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         )
         cocktailList.add(cCocktail)
 
+        val JMule = Cocktail(
+            R.drawable.placeholder,
+            "Jäger Mule",
+            getString(R.string.BSJäger),
+            getString(R.string.JMuleIngredients),
+            getString(R.string.JMuleSteps)
+        )
+        cocktailList.add(JMule)
+
 
     }
 }

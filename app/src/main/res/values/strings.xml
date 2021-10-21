@@ -15,6 +15,7 @@
     <string name="BSTequila">Tequila</string>
     <string name="BSGin">Gin</string>
     <string name="BSVodka">Vodka</string>
+    <string name="BSJäger">Jägermeister</string>
 
     <!-- Extra Ingredients -->
     <string name="Cointreau">Cointreau</string>
@@ -58,4 +59,9 @@
     <!-- Cointreau Cocktail -->
     <string name="CCocktailIngredients">Cointreau\nRed vermouth\nBitter</string>
     <string name="CCocktailSteps">1. Add 1.5 oz Cointreau\n2. Add 1.5 oz red vermouth\n3. Add 3–4 dashes of bitter\n4. Add ice and stir a while\n5. Serve in a martini glass\n\nOptional garnish: Lime shell</string>
+
+    <!-- Jäger Mule -->
+    <string name="JMuleIngredients">Jägermeister\nGinger Beer\nLime Juice</string>
+    <string name="JMuleSteps">1. Add 1.75 oz Jägermeister in a tall glass\n2. Add ¾ oz fresh lime juice\n3. Add ice and steer\n4. Top up with ginger beer\n\nOptional garnish: Lime or cucumber slice</string>
+
 </resources>
