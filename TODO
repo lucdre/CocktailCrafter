@@ -1,6 +1,8 @@
-- Fix cocktail images (alignment and add new, copyright free pls)
+- Use non-copyright images
+- Add difficulty/Sort by difficulty
+- Something with replacing drink. e.g. the rye cocktails... hard to find (depending on location)... so use bourbon instead
 - Adjust colors (light and dark mode)
-- Filter by base spirit
+- Filter by base spirit (including alternative :))
 - Filter by ingredients
 - Select which ingredients you have and see what you can make
 - Cards color/background/text change depending on the cocktail
@@ -15,3 +17,5 @@
 - Ability to rate your drink
 - Add description of the drink
 - Get recipes from online pages?
+- Vote for cocktail of the day/week!
+- Cocktail cards grow/shrink depending on popularity
