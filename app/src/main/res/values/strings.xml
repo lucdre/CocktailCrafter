@@ -64,4 +64,8 @@
     <string name="JMuleIngredients">Jägermeister\nGinger Beer\nLime Juice</string>
     <string name="JMuleSteps">1. Add 1.75 oz Jägermeister in a tall glass\n2. Add ¾ oz fresh lime juice\n3. Add ice and steer\n4. Top up with ginger beer\n\nOptional garnish: Lime or cucumber slice</string>
 
+    <!-- Margarita Original -->
+    <string name="MargaritaIngredients">Tequila\nCointreau\nLime Juice</string>
+    <string name="MargaritaSteps">1. Add 1 oz Cointreau\n2. Add ¾ oz fresh lime juice\n3. Add 1.5 oz Tequila (White or Mezcal)\n4. Add ice and shake, then strain in your glass\n\nOptional: Add salt to the edges of your glass</string>
+
 </resources>
