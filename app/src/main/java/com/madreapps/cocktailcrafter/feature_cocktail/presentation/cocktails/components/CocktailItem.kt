@@ -87,7 +87,8 @@ fun CocktailItem(
         ) {
             Icon(
                imageVector = Icons.Default.Delete,
-               contentDescription = "Delete cocktail"
+               contentDescription = "Delete cocktail",
+               tint = MaterialTheme.colors.onSurface
             )
         }
     }

@@ -19,6 +19,7 @@ import androidx.navigation.NavController
 import com.madreapps.cocktailcrafter.feature_cocktail.domain.model.Cocktail
 import com.madreapps.cocktailcrafter.feature_cocktail.presentation.cocktails.components.CocktailItem
 import com.madreapps.cocktailcrafter.feature_cocktail.presentation.cocktails.components.OrderSection
+import com.madreapps.cocktailcrafter.feature_cocktail.presentation.util.Screen
 import kotlinx.coroutines.launch
 
 @ExperimentalAnimationApi
@@ -35,7 +36,7 @@ fun CocktailsScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-                /*TODO*/
+                    navController.navigate(Screen.AddEditCocktailScreen.route)
                 },
                 backgroundColor = MaterialTheme.colors.primary
             ) {
@@ -92,7 +93,10 @@ fun CocktailsScreen(
                         modifier = Modifier
                             .fillMaxSize()
                             .clickable {
-
+                                navController.navigate(
+                                    Screen.AddEditCocktailScreen.route +
+                                            "?cocktailId=${cocktail.id}&cocktailColor=${cocktail.color}"
+                                )
                             },
                         onDeleteClick = {
                             viewModel.onEvent(CocktailsEvent.DeleteCocktail(cocktail))
