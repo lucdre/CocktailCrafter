@@ -43,7 +43,7 @@ class CocktailsViewModel @Inject constructor(
             }
             is CocktailsEvent.DeleteCocktail -> {
                 viewModelScope.launch {
-                    cocktailUseCases.deleteCocktails(event.cocktail)
+                    cocktailUseCases.deleteCocktail(event.cocktail)
                     recentlyDeletedCocktail = event.cocktail
                 }
             }
