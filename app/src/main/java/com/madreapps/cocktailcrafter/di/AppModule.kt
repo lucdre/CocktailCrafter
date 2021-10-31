@@ -1,8 +1,14 @@
 package com.madreapps.cocktailcrafter.di
 
-import com.madreapps.cocktailcrafter.data.remote.CocktailApi
-import com.madreapps.cocktailcrafter.data.repository.CocktailRepositoryImpl
-import com.madreapps.cocktailcrafter.domain.repository.CocktailRepository
+import android.app.Application
+import androidx.room.Room
+import com.madreapps.cocktailcrafter.feature_cocktail.data.data_source.CocktailDatabase
+import com.madreapps.cocktailcrafter.feature_cocktail.data.repository.CocktailRepositoryImpl
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.repository.CocktailRepository
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.AddCocktailUseCase
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.CocktailUseCases
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.DeleteCocktailUseCase
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.GetCocktailsUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,14 +21,29 @@ object AppModule {
 
     @Provides
     @Singleton
-    //TODO remove "?" and return correct thing maybe
-    fun provideCocktailApi() : CocktailApi? {
-        return null
+    fun provideCocktailDatabase(app: Application): CocktailDatabase {
+        return Room.databaseBuilder(
+            app,
+            CocktailDatabase::class.java,
+            CocktailDatabase.DATABASE_NAME
+        ).build()
+    }
+
+    //For test cases, in a different module we can change the repository
+    @Provides
+    @Singleton
+    fun provideCocktailRepository(db: CocktailDatabase): CocktailRepository {
+        return CocktailRepositoryImpl(db.cocktailDao)
     }
 
     @Provides
     @Singleton
-    fun provideCocktailRepository(api: CocktailApi): CocktailRepository{
-        return CocktailRepositoryImpl(api)
+    fun provideCocktailUseCases(repository: CocktailRepository): CocktailUseCases {
+        return CocktailUseCases(
+            getCocktails = GetCocktailsUseCase(repository),
+            deleteCocktails = DeleteCocktailUseCase(repository),
+            addCocktail = AddCocktailUseCase(repository)
+        )
     }
+
 }
