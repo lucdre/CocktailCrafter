@@ -5,10 +5,7 @@ import androidx.room.Room
 import com.madreapps.cocktailcrafter.feature_cocktail.data.data_source.CocktailDatabase
 import com.madreapps.cocktailcrafter.feature_cocktail.data.repository.CocktailRepositoryImpl
 import com.madreapps.cocktailcrafter.feature_cocktail.domain.repository.CocktailRepository
-import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.AddCocktailUseCase
-import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.CocktailUseCases
-import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.DeleteCocktailUseCase
-import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.GetCocktailsUseCase
+import com.madreapps.cocktailcrafter.feature_cocktail.domain.use_case.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,8 +38,9 @@ object AppModule {
     fun provideCocktailUseCases(repository: CocktailRepository): CocktailUseCases {
         return CocktailUseCases(
             getCocktails = GetCocktailsUseCase(repository),
-            deleteCocktails = DeleteCocktailUseCase(repository),
-            addCocktail = AddCocktailUseCase(repository)
+            deleteCocktail = DeleteCocktailUseCase(repository),
+            addCocktail = AddCocktailUseCase(repository),
+            getCocktail = GetCocktailUseCase(repository)
         )
     }
 
