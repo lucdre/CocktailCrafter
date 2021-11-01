@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Save
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.madreapps.cocktailcrafter.feature_cocktail.domain.model.Cocktail
-import com.madreapps.cocktailcrafter.feature_cocktail.presentation.add_edit_cocktail.components.TransparentHintTextField
+import com.madreapps.cocktailcrafter.feature_cocktail.presentation.add_edit_cocktail.components.*
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -46,6 +46,7 @@ fun AddEditCocktailScreen(
     }
     val scope = rememberCoroutineScope()
 
+
     LaunchedEffect(key1 = true) {
         viewModel.eventFlow.collectLatest { event ->
             when(event) {
@@ -63,14 +64,50 @@ fun AddEditCocktailScreen(
 
     Scaffold(
         floatingActionButton = {
-            FloatingActionButton(
+            /**FloatingActionButton(
                 onClick = {
                     viewModel.onEvent(AddEditCocktailEvent.SaveCocktail)
                 },
                 backgroundColor = MaterialTheme.colors.primary
             ) {
                 Icon(imageVector = Icons.Default.Save, contentDescription = "Save cocktail")
-            }
+            }**/
+            MultiFloatingActionButton(
+                fabIcon = FabIcon(Icons.Default.MoreVert, iconRotate = 45f),
+                fabOption = FabOption(
+                    iconTint = Color.White,
+                    showLabels = true
+                ),
+                items = listOf(
+                    MultiFabItem(
+                        id = 1,
+                        iconRes = Icons.Default.Save,
+                        label = "Save"
+                    ),
+                    MultiFabItem(
+                        id = 2,
+                        iconRes = Icons.Default.Edit,
+                        label = "Edit"
+                    ),
+                    MultiFabItem(
+                        id = 3,
+                        iconRes = Icons.Default.Delete,
+                        label = "Delete"
+                    )
+                ),
+                onFabItemClicked = {
+                    if(it.id == 1) {
+                       viewModel.onEvent(AddEditCocktailEvent.SaveCocktail)
+                    }
+                    //TODO edit and delete
+                    if(it.id == 2) {
+                        //viewModel.onEvent(AddEditCocktailEvent)
+                    }
+                    if(it.id == 3) {
+                        //viewModel.onEvent(AddEditCocktailEvent.DeleteCocktail(viewModel.currentCocktail))
+                    }
+                }
+            )
         },
         scaffoldState = scaffoldState
     ) {

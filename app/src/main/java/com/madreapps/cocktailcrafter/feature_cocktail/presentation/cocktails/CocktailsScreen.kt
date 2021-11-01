@@ -1,10 +1,10 @@
 package com.madreapps.cocktailcrafter.feature_cocktail.presentation.cocktails
 
 import androidx.compose.animation.*
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -16,12 +16,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.madreapps.cocktailcrafter.feature_cocktail.domain.model.Cocktail
 import com.madreapps.cocktailcrafter.feature_cocktail.presentation.cocktails.components.CocktailItem
 import com.madreapps.cocktailcrafter.feature_cocktail.presentation.cocktails.components.OrderSection
 import com.madreapps.cocktailcrafter.feature_cocktail.presentation.util.Screen
 import kotlinx.coroutines.launch
 
+//TODO remove option of editing when clicking, and remove delete button
+@ExperimentalFoundationApi
 @ExperimentalAnimationApi
 @Composable
 fun CocktailsScreen(
@@ -56,7 +57,7 @@ fun CocktailsScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Your cocktail",
+                    text = "Cocktails",
                     style = MaterialTheme.typography.h4
                 )
                 IconButton(
@@ -86,7 +87,11 @@ fun CocktailsScreen(
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
-            LazyColumn(modifier = Modifier.fillMaxSize()) {
+            //TODO somehow adapt to the size once added image, also the gridview (like pinterest)
+            LazyVerticalGrid(
+                cells = GridCells.Fixed(2),
+                modifier = Modifier.fillMaxSize()
+            ) {
                 items(state.cocktails) { cocktail ->
                     CocktailItem(
                         cocktail = cocktail,

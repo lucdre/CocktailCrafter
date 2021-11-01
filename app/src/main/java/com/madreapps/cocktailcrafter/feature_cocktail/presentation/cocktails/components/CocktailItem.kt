@@ -74,10 +74,11 @@ fun CocktailItem(
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
+                //TODO change to base Spirit
                 text = cocktail.content,
                 style = MaterialTheme.typography.body1,
                 color = MaterialTheme.colors.onSurface,
-                maxLines = 10,
+                maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
         }
