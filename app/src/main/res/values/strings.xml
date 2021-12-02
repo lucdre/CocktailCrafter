@@ -16,6 +16,7 @@
     <string name="BSGin">Gin</string>
     <string name="BSVodka">Vodka</string>
     <string name="BSJäger">Jägermeister</string>
+    <string name="BSScotch">Scotch</string>
 
     <!-- Extra Ingredients -->
     <string name="Cointreau">Cointreau</string>
@@ -67,5 +68,13 @@
     <!-- Margarita Original -->
     <string name="MargaritaIngredients">Tequila\nCointreau\nLime Juice</string>
     <string name="MargaritaSteps">1. Add 1 oz Cointreau\n2. Add ¾ oz fresh lime juice\n3. Add 1.5 oz Tequila (White or Mezcal)\n4. Add ice and shake, then strain in your glass\n\nOptional: Add salt to the edges of your glass</string>
+
+    <!-- Whisky Sour -->
+    <string name="WSourIngredients">Bourbon\nEgg white\nRich dem syrup\nLemon juice</string>
+    <string name="WSourSteps">1. Add 1.5 oz Bourbon\n2. Add &#189; oz egg white\n3. Add ¾ oz lemon juice\n4. Add &#189; oz rich dem syrup\n5. Dry shake, then add ice and shake again. Strain in cold glass\n\nOptional: Add 3 drops of bitters on top</string>
+
+    <!-- Penicillin -->
+    <string name="PenicillinIngredients">Blended scotch\nSingle malt scotch\nHoney syrup\nLemon Juice\nFresh ginger</string>
+    <string name="PenicillinSteps">1. Add 3&#8211;4 slices of ginger and mush them\n2. Add ¾ oz honey syrup\n3. Add ¾ oz lemon juice\n4. Add 2 oz blended scotch\n5. Add ¼ single malt scotch\n6. Add ice, shake and strain on the rocks</string>
 
 </resources>

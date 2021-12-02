@@ -155,6 +155,24 @@ class MainActivity : AppCompatActivity(), CocktailClickListener {
         )
         cocktailList.add(margarita)
 
+        val wSour = Cocktail(
+            R.drawable.placeholder,
+            "Whisky Sour",
+            getString(R.string.BSBourbon),
+            getString(R.string.WSourIngredients),
+            getString(R.string.WSourSteps)
+        )
+        cocktailList.add(wSour)
+
+        val penicillin = Cocktail(
+            R.drawable.placeholder,
+            "Penicillin",
+            getString(R.string.BSScotch),
+            getString(R.string.PenicillinIngredients),
+            getString(R.string.PenicillinSteps)
+        )
+        cocktailList.add(penicillin)
+
 
     }
 }
