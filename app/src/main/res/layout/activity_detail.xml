@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +12,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".DetailActivity">
+
 
     <ImageView
         android:id="@+id/cocktailImage"
@@ -87,4 +93,11 @@
         android:text="@string/base_spirit_placeholder"
         android:textSize="14sp" />
 
+    <!-- Add a little space to the end -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" />
+
 </LinearLayout>
+
+</ScrollView>
